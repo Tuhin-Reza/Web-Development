@@ -1,4 +1,7 @@
 
+*{
+  margin: 0px;
+}
 .header {
     background-color: lavenderblush;
     display: flex;
