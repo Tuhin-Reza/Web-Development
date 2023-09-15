@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-F-Layout</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 50%;
+            height: 150px;
+            padding: 10px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .box1 {
+            background-color: darkgray;
+            border-radius: 10px;
+            height: 150px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box2 {
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 780px) {
+            .container {
+                border: 2px solid red;
+                border-radius: 10px;
+                width: 30%;
+                padding: 10px;
+                display: flex;
+                gap: 5px;
+                flex-direction: column;
+            }
+
+            .box1 {
+                background-color: darkgray;
+                border-radius: 10px;
+                height: 50px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .box2 {
+                background-color: blanchedalmond;
+                border-radius: 10px;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">Left</div>
+        <div class="box2">Right</div>
+    </div>
+</body>
+
+</html>
